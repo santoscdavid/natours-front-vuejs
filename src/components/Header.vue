@@ -9,7 +9,7 @@
         <span class="heading-primary-main">Outdoors</span>
         <span class="heading-primary-sub">is where life happens</span>
       </h1>
-      <a href="#" class="btn btn-white"> Discovery our tours </a>
+      <a href="#" class="btn btn-white btn-animated"> Discovery our tours </a>
     </div>
   </header>
 </template>
@@ -67,7 +67,7 @@ export default {
   letter-spacing: 35px;
 
   animation-name: moveInLeft;
-  animation-duration: 1.5s;
+  animation-duration: 1s;
   animation-timing-function: ease-in;
 
   /* animation-iteration-count: 3; */
@@ -79,7 +79,7 @@ export default {
   font-weight: 700;
   letter-spacing: 17.4px;
 
-  animation: moveInRight 1.5s ease-in;
+  animation: moveInRight 1s ease-in;
 }
 
 @keyframes moveInLeft {
@@ -122,6 +122,7 @@ export default {
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
+  position: relative;
 }
 
 .btn:hover {
@@ -137,5 +138,42 @@ export default {
 .btn-white {
   background-color: #fff;
   color: #777;
+}
+.btn::after {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: #fff;
+}
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInTBottom 0.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInTBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
 </style>
