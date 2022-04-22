@@ -9,5 +9,3 @@ export default {
     components: { Header }
 };
 </script>
-
-<style src="@/styles/base/_base.scss" lang="scss"></style>

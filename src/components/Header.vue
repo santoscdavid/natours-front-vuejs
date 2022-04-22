@@ -19,5 +19,3 @@ export default {
     name: 'Header'
 };
 </script>
-
-<style src="./styles/Header.scss" lang="scss" />
