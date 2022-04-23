@@ -1,16 +1,15 @@
 <template>
-  <IndexPage />
+    <IndexPage />
 </template>
 
 <script>
-import IndexPage from "./views/IndexPage/IndexPage.vue";
+import IndexPage from './views/IndexPage/IndexPage.vue';
 export default {
-  name: "App",
-  components: {
-    IndexPage,
-  },
+    name: 'App',
+    components: {
+        IndexPage
+    }
 };
 </script>
 
-<style></style>
-
+<style src="@/styles/main.scss" lang="scss"></style>

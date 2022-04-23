@@ -1,27 +1,15 @@
 <template>
-  <Header></Header>
+    <div>
+        <Header />
+        <GridTest />
+    </div>
 </template>
 
 <script>
-import Header from "@/components/Header.vue";
+import Header from '@/components/Header.vue';
+import GridTest from '@/components/Grid-test.vue';
 export default {
-  name: "IndexPage",
-  components: { Header },
+    name: 'IndexPage',
+    components: { Header, GridTest }
 };
 </script>
-
-<style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.7;
-  color: #777;
-}
-</style>
