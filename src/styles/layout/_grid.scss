@@ -1,6 +1,6 @@
 .row {
     max-width: $grid-width;
-    background-color: #eee;
+    // background-color: #eee;
     margin: 0 auto;
     margin-bottom: $gutter-vertical;
 
@@ -11,9 +11,9 @@
     @include clearfix;
 
     [class^='col-'] {
-        background-color: orangered;
+        // background-color: orangered;
         float: left;
-        color: $color-white;
+        // color: $color-white;
 
         &:not(:last-child) {
             margin-right: $gutter-horizontal;
