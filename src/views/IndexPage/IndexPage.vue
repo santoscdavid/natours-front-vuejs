@@ -1,15 +1,17 @@
 <template>
     <div>
         <Header />
-        <GridTest />
+        <Main />
+        <!-- <GridTest /> -->
     </div>
 </template>
 
 <script>
-import Header from '@/components/Header.vue';
-import GridTest from '@/components/Grid-test.vue';
+import Header from './components/Header.vue';
+import Main from './components/Main.vue';
+// import GridTest from '@/components/Grid-test.vue';
 export default {
     name: 'IndexPage',
-    components: { Header, GridTest }
+    components: { Header, Main }
 };
 </script>
