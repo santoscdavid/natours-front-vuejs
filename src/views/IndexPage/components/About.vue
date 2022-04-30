@@ -19,7 +19,25 @@
                 </p>
                 <a href="#" class="btn-text">Learn more &rarr;</a>
             </div>
-            <div class="col-1-of-2">Image composition</div>
+            <div class="col-1-of-2">
+                <div class="composition">
+                    <img
+                        src="@/assets/nat-1-large.jpg"
+                        alt="Photo 1"
+                        class="composition__photo composition__photo--p1"
+                    />
+                    <img
+                        src="@/assets/nat-2-large.jpg"
+                        alt="Photo 2"
+                        class="composition__photo composition__photo--p2"
+                    />
+                    <img
+                        src="@/assets/nat-3-large.jpg"
+                        alt="Photo 3"
+                        class="composition__photo composition__photo--p3"
+                    />
+                </div>
+            </div>
         </div>
     </section>
 </template>
