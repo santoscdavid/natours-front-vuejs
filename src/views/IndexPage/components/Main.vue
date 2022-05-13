@@ -1,12 +1,16 @@
 <template>
-    <About />
+    <div>
+        <About />
+        <Features />
+    </div>
 </template>
 
 <script>
 import About from './About.vue';
+import Features from './Features.vue';
 export default {
     name: 'Main',
-    components: { About }
+    components: { About, Features }
 };
 </script>
 
